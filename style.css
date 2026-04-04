@@ -1,110 +1,68 @@
-body {
+body{
 
-background:#0a0a0a;
-color:white;
-font-family:Orbitron, sans-serif;
+background:black;
 margin:0;
+font-family:'Orbitron', sans-serif;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 
 }
 
-.hero{
+.container{
 
 text-align:center;
-padding:60px 20px;
-border-bottom:2px solid #222;
+position:relative;
+max-width:500px;
 
 }
 
-h1{
+.driver-img{
 
-font-size:42px;
-letter-spacing:3px;
-
-}
-
-.subtitle{
-
-color:#aaa;
-
-}
-
-section{
-
-padding:40px 20px;
-max-width:900px;
-margin:auto;
-
-}
-
-.stat-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
+width:100%;
+max-width:420px;
+margin-bottom:-80px;
 
 }
 
 .card{
 
-background:#111;
-border:1px solid #333;
-padding:20px;
-text-align:center;
-border-radius:10px;
+background:#162a6a;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
 
 }
 
-.card p{
+h1{
 
-font-size:32px;
-color:#00ffcc;
-
-}
-
-.project{
-
-background:#111;
-padding:20px;
-margin-bottom:15px;
-border-radius:10px;
+font-size:38px;
+margin:0;
 
 }
 
-.skills ul{
+h2{
+
+font-weight:400;
+margin-bottom:30px;
+opacity:0.9;
+
+}
+
+.stats{
 
 display:flex;
-flex-wrap:wrap;
-gap:10px;
-list-style:none;
-padding:0;
+flex-direction:column;
+gap:12px;
 
 }
 
-.skills li{
+.stat{
 
-background:#111;
-padding:10px 15px;
-border-radius:6px;
-border:1px solid #333;
-
-}
-
-.button{
-
-display:inline-block;
-padding:15px 25px;
-background:#00ffcc;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-
-}
-
-footer{
-
-text-align:center;
-padding:30px;
-color:#777;
+display:flex;
+justify-content:space-between;
+font-size:22px;
 
 }
