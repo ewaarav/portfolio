@@ -8,10 +8,10 @@ body{
 
 font-family:'Inter',sans-serif;
 background:black;
-color:#111;
 display:flex;
 flex-direction:column;
 align-items:center;
+color:#111;
 
 }
 
@@ -25,6 +25,14 @@ width:100%;
 display:flex;
 justify-content:center;
 align-items:flex-end;
+
+}
+
+.f1logo{
+
+position:absolute;
+top:30px;
+width:80px;
 
 }
 
@@ -44,14 +52,6 @@ z-index:2;
 
 }
 
-.f1logo{
-
-position:absolute;
-top:30px;
-width:80px;
-
-}
-
 /* CARD */
 
 .resume-card{
@@ -62,7 +62,6 @@ width:90%;
 border-radius:28px;
 padding:40px;
 margin-top:-60px;
-z-index:5;
 
 }
 
@@ -72,21 +71,6 @@ z-index:5;
 
 text-align:center;
 margin-bottom:30px;
-
-}
-
-.name-row{
-
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-
-}
-
-.flag{
-
-height:24px;
 
 }
 
@@ -100,8 +84,8 @@ color:#1b2e6e;
 
 h2{
 
-font-weight:500;
 margin-top:6px;
+font-weight:500;
 color:#1b2e6e;
 
 }
@@ -120,6 +104,12 @@ color:#333;
 margin-top:30px;
 margin-bottom:12px;
 font-weight:700;
+
+}
+
+.resume-card p{
+
+line-height:1.6;
 
 }
 
