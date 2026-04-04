@@ -1,4 +1,4 @@
-/* F1 Fonts */
+/* ===== CUSTOM F1 FONTS ===== */
 
 @font-face {
 font-family: "F1";
@@ -16,7 +16,7 @@ src: url("fonts/Formula1-Wide_web_0.ttf") format("truetype");
 }
 
 
-/* Base */
+/* ===== GLOBAL ===== */
 
 *{
 margin:0;
@@ -27,16 +27,15 @@ box-sizing:border-box;
 body{
 
 background:black;
-font-family:"F1",sans-serif;
+font-family:"F1", sans-serif;
 display:flex;
 flex-direction:column;
 align-items:center;
-color:#111;
 
 }
 
 
-/* HERO */
+/* ===== HERO ===== */
 
 .hero{
 
@@ -49,6 +48,20 @@ align-items:center;
 
 }
 
+/* center container */
+
+.hero-layer{
+
+position:relative;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+/* F1 logo */
+
 .f1logo{
 
 position:absolute;
@@ -57,52 +70,46 @@ width:80px;
 
 }
 
-/* Center container */
-
-.hero-center{
-
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-
-}
-
-/* Red Bull logo perfectly centered */
+/* redbull centered */
 
 .redbull{
 
 position:absolute;
-width:720px;
+left:50%;
+transform:translateX(-50%);
+width:900px;
 z-index:1;
 
 }
 
-/* Driver in front */
+/* driver centered */
 
 .driver{
 
+position:absolute;
+left:50%;
+transform:translateX(-50%);
 height:420px;
 z-index:2;
 
 }
 
 
-/* CARD */
+/* ===== CARD ===== */
 
 .resume-card{
 
 background:#e6e6e6;
 max-width:850px;
 width:90%;
-border-radius:30px;
-padding:45px;
-margin-top:-80px;
+border-radius:28px;
+padding:40px;
+margin-top:-60px;
 
 }
 
 
-/* TITLE */
+/* ===== TITLE ===== */
 
 .title{
 
@@ -115,15 +122,15 @@ h1{
 
 font-family:"F1Wide";
 font-size:42px;
-color:#1a2e6b;
+color:#1b2e6e;
 
 }
 
 h2{
 
 font-family:"F1";
-margin-top:8px;
-color:#1a2e6b;
+margin-top:6px;
+color:#1b2e6e;
 
 }
 
@@ -135,7 +142,7 @@ color:#444;
 }
 
 
-/* SECTION TITLES */
+/* ===== SECTIONS ===== */
 
 .resume-card h3{
 
@@ -152,7 +159,7 @@ line-height:1.6;
 }
 
 
-/* EDUCATION */
+/* ===== EDUCATION ===== */
 
 .edu{
 
@@ -170,7 +177,7 @@ width:70px;
 }
 
 
-/* EXPERIENCE */
+/* ===== EXPERIENCE ===== */
 
 .exp{
 
@@ -195,50 +202,36 @@ flex-direction:row-reverse;
 }
 
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 
 @media (max-width:768px){
 
 .hero{
-
 height:420px;
-
-}
-
-.driver{
-
-height:300px;
-
 }
 
 .redbull{
-
 width:520px;
+}
 
+.driver{
+height:300px;
 }
 
 .resume-card{
-
 padding:28px;
-
 }
 
 .exp{
-
 flex-direction:column;
-
 }
 
 .exp.reverse{
-
 flex-direction:column;
-
 }
 
 .exp img{
-
 width:100%;
-
 }
 
 }
