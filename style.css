@@ -52,7 +52,8 @@ overflow:hidden;
 
 }
 
-/* F1 logo */
+
+/* F1 LOGO */
 
 .f1logo{
 
@@ -61,6 +62,7 @@ top:30px;
 width:80px;
 
 }
+
 
 /* HERO LAYER */
 
@@ -83,10 +85,9 @@ align-items:center;
 position:absolute;
 left:50%;
 transform:translateX(-50%);
-
 top:-60px;
 
-width:1100px;          /* fills screen better */
+width:1100px;
 
 z-index:1;
 
@@ -107,8 +108,6 @@ height:470px;
 
 z-index:3;
 
-/* subtle depth */
-
 filter: drop-shadow(0px 10px 18px rgba(0,0,0,0.4));
 
 }
@@ -121,11 +120,12 @@ filter: drop-shadow(0px 10px 18px rgba(0,0,0,0.4));
 background:#e6e6e6;
 max-width:860px;
 width:90%;
+
 border-radius:32px;
 
 padding:55px;
 
-margin-top:-120px;  /* driver stands on card */
+margin-top:-120px;
 
 z-index:5;
 
@@ -141,10 +141,11 @@ margin-bottom:40px;
 
 }
 
-h1{
+.driver-name{
 
 font-family:"F1Wide";
 font-size:56px;
+letter-spacing:1px;
 color:#1b2e6e;
 
 }
