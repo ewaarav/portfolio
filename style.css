@@ -1,4 +1,4 @@
-/* ===== F1 CUSTOM FONTS ===== */
+/* ===== F1 FONTS ===== */
 
 @font-face {
 font-family: "F1";
@@ -32,7 +32,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 
-font-size:1.3rem; /* overall text 30% larger */
+font-size:1.3rem;
 
 }
 
@@ -43,10 +43,12 @@ font-size:1.3rem; /* overall text 30% larger */
 
 position:relative;
 width:100%;
-height:500px;
+height:540px;
 display:flex;
 justify-content:center;
 align-items:flex-end;
+
+overflow:hidden;
 
 }
 
@@ -55,18 +57,18 @@ align-items:flex-end;
 .f1logo{
 
 position:absolute;
-top:25px;
+top:30px;
 width:80px;
 
 }
 
-
-/* center container */
+/* HERO LAYER */
 
 .hero-layer{
 
 position:relative;
 width:100%;
+height:100%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -81,23 +83,33 @@ align-items:center;
 position:absolute;
 left:50%;
 transform:translateX(-50%);
-top:-40px;           /* shifts logo upward */
-width:900px;
+
+top:-60px;
+
+width:1100px;          /* fills screen better */
+
 z-index:1;
 
 }
 
 
-/* DRIVER IMAGE */
+/* DRIVER */
 
 .driver{
 
 position:absolute;
 left:50%;
 transform:translateX(-50%);
-top:-10px;           /* shifts driver upward */
-height:440px;
-z-index:2;
+
+top:40px;
+
+height:470px;
+
+z-index:3;
+
+/* subtle depth */
+
+filter: drop-shadow(0px 10px 18px rgba(0,0,0,0.4));
 
 }
 
@@ -107,11 +119,15 @@ z-index:2;
 .resume-card{
 
 background:#e6e6e6;
-max-width:850px;
+max-width:860px;
 width:90%;
-border-radius:30px;
-padding:50px;
-margin-top:-80px;
+border-radius:32px;
+
+padding:55px;
+
+margin-top:-120px;  /* driver stands on card */
+
+z-index:5;
 
 }
 
@@ -121,14 +137,14 @@ margin-top:-80px;
 .title{
 
 text-align:center;
-margin-bottom:35px;
+margin-bottom:40px;
 
 }
 
 h1{
 
 font-family:"F1Wide";
-font-size:54px;
+font-size:56px;
 color:#1b2e6e;
 
 }
@@ -174,14 +190,14 @@ line-height:1.7;
 
 display:flex;
 align-items:center;
-gap:20px;
+gap:22px;
 margin-bottom:22px;
 
 }
 
 .edu img{
 
-width:80px;
+width:85px;
 
 }
 
@@ -192,7 +208,7 @@ width:80px;
 
 display:flex;
 align-items:center;
-gap:22px;
+gap:24px;
 margin-top:24px;
 
 }
@@ -220,17 +236,18 @@ height:420px;
 }
 
 .redbull{
-width:520px;
+width:620px;
 top:-20px;
 }
 
 .driver{
 height:320px;
-top:0;
+top:60px;
 }
 
 .resume-card{
-padding:30px;
+padding:32px;
+margin-top:-90px;
 }
 
 .exp{
